@@ -105,6 +105,7 @@ Public Class F1_Productos
             lbgrupo2.Text = dt.Rows(0).Item("Grupo 2").ToString + ":"
             lbgrupo3.Text = dt.Rows(0).Item("Grupo 3").ToString + ":"
             lbgrupo4.Text = dt.Rows(0).Item("Grupo 4").ToString + ":"
+            lbgrupo5.Text = dt.Rows(0).Item("Grupo5").ToString + ":"
 
         End If
     End Sub

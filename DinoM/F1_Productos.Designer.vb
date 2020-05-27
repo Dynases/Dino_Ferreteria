@@ -86,13 +86,13 @@ Partial Class F1_Productos
         Me.SuperTabControl_Imagenes_DetalleProducto = New DevComponents.DotNetBar.SuperTabControl()
         Me.SuperTabControlPanel1 = New DevComponents.DotNetBar.SuperTabControlPanel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.UsImg = New DinoM.UCImg()
         Me.SuperTabItem_Imagenes = New DevComponents.DotNetBar.SuperTabItem()
         Me.SuperTabControlPanel2 = New DevComponents.DotNetBar.SuperTabControlPanel()
         Me.dgjDetalleProducto = New Janus.Windows.GridEX.GridEX()
         Me.SuperTabItem_DetalleProducto = New DevComponents.DotNetBar.SuperTabItem()
         Me.btExcel = New DevComponents.DotNetBar.ButtonX()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.UsImg = New DinoM.UCImg()
         CType(Me.SuperTabPrincipal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuperTabPrincipal.SuspendLayout()
         Me.SuperTabControlPanelRegistro.SuspendLayout()
@@ -515,7 +515,7 @@ Partial Class F1_Productos
         Me.lbgrupo3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.lbgrupo3.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbgrupo3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.lbgrupo3.Location = New System.Drawing.Point(14, 97)
+        Me.lbgrupo3.Location = New System.Drawing.Point(14, 72)
         Me.lbgrupo3.Name = "lbgrupo3"
         Me.lbgrupo3.SingleLineColor = System.Drawing.SystemColors.Control
         Me.lbgrupo3.Size = New System.Drawing.Size(116, 23)
@@ -531,7 +531,7 @@ Partial Class F1_Productos
         Me.lbgrupo4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.lbgrupo4.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbgrupo4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.lbgrupo4.Location = New System.Drawing.Point(14, 128)
+        Me.lbgrupo4.Location = New System.Drawing.Point(14, 103)
         Me.lbgrupo4.Name = "lbgrupo4"
         Me.lbgrupo4.SingleLineColor = System.Drawing.SystemColors.Control
         Me.lbgrupo4.Size = New System.Drawing.Size(116, 23)
@@ -577,7 +577,7 @@ Partial Class F1_Productos
         cbgrupo3_DesignTimeLayout.LayoutString = resources.GetString("cbgrupo3_DesignTimeLayout.LayoutString")
         Me.cbgrupo3.DesignTimeLayout = cbgrupo3_DesignTimeLayout
         Me.cbgrupo3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbgrupo3.Location = New System.Drawing.Point(140, 99)
+        Me.cbgrupo3.Location = New System.Drawing.Point(140, 74)
         Me.cbgrupo3.MaxLength = 40
         Me.cbgrupo3.Name = "cbgrupo3"
         Me.cbgrupo3.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
@@ -593,7 +593,7 @@ Partial Class F1_Productos
         cbgrupo4_DesignTimeLayout.LayoutString = resources.GetString("cbgrupo4_DesignTimeLayout.LayoutString")
         Me.cbgrupo4.DesignTimeLayout = cbgrupo4_DesignTimeLayout
         Me.cbgrupo4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbgrupo4.Location = New System.Drawing.Point(140, 129)
+        Me.cbgrupo4.Location = New System.Drawing.Point(140, 104)
         Me.cbgrupo4.MaxLength = 40
         Me.cbgrupo4.Name = "cbgrupo4"
         Me.cbgrupo4.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
@@ -639,7 +639,7 @@ Partial Class F1_Productos
         Me.btgrupo3.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
         Me.btgrupo3.Image = Global.DinoM.My.Resources.Resources.add
         Me.btgrupo3.ImageFixedSize = New System.Drawing.Size(25, 23)
-        Me.btgrupo3.Location = New System.Drawing.Point(290, 100)
+        Me.btgrupo3.Location = New System.Drawing.Point(290, 75)
         Me.btgrupo3.Name = "btgrupo3"
         Me.btgrupo3.Size = New System.Drawing.Size(28, 23)
         Me.btgrupo3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -653,7 +653,7 @@ Partial Class F1_Productos
         Me.btgrupo4.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
         Me.btgrupo4.Image = Global.DinoM.My.Resources.Resources.add
         Me.btgrupo4.ImageFixedSize = New System.Drawing.Size(25, 23)
-        Me.btgrupo4.Location = New System.Drawing.Point(290, 131)
+        Me.btgrupo4.Location = New System.Drawing.Point(290, 106)
         Me.btgrupo4.Name = "btgrupo4"
         Me.btgrupo4.Size = New System.Drawing.Size(28, 23)
         Me.btgrupo4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -1118,9 +1118,9 @@ Partial Class F1_Productos
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.Controls.Add(Me.btgrupo5)
         Me.Panel2.Controls.Add(Me.lbgrupo1)
-        Me.Panel2.Controls.Add(Me.lbgrupo5)
         Me.Panel2.Controls.Add(Me.btgrupo3)
         Me.Panel2.Controls.Add(Me.cbgrupo5)
+        Me.Panel2.Controls.Add(Me.lbgrupo5)
         Me.Panel2.Controls.Add(Me.GroupBox1)
         Me.Panel2.Controls.Add(Me.btgrupo4)
         Me.Panel2.Controls.Add(Me.lbgrupo2)
@@ -1148,7 +1148,7 @@ Partial Class F1_Productos
         Me.btgrupo5.ColorTable = DevComponents.DotNetBar.eButtonColor.Flat
         Me.btgrupo5.Image = Global.DinoM.My.Resources.Resources.add
         Me.btgrupo5.ImageFixedSize = New System.Drawing.Size(25, 23)
-        Me.btgrupo5.Location = New System.Drawing.Point(290, 74)
+        Me.btgrupo5.Location = New System.Drawing.Point(290, 133)
         Me.btgrupo5.Name = "btgrupo5"
         Me.btgrupo5.Size = New System.Drawing.Size(28, 23)
         Me.btgrupo5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -1164,19 +1164,19 @@ Partial Class F1_Productos
         Me.lbgrupo5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.lbgrupo5.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbgrupo5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(139, Byte), Integer))
-        Me.lbgrupo5.Location = New System.Drawing.Point(15, 72)
+        Me.lbgrupo5.Location = New System.Drawing.Point(15, 131)
         Me.lbgrupo5.Name = "lbgrupo5"
         Me.lbgrupo5.SingleLineColor = System.Drawing.SystemColors.Control
         Me.lbgrupo5.Size = New System.Drawing.Size(116, 23)
         Me.lbgrupo5.TabIndex = 217
-        Me.lbgrupo5.Text = "CATEGORÍA:"
+        Me.lbgrupo5.Text = "Grupo 5:"
         '
         'cbgrupo5
         '
         cbgrupo5_DesignTimeLayout.LayoutString = resources.GetString("cbgrupo5_DesignTimeLayout.LayoutString")
         Me.cbgrupo5.DesignTimeLayout = cbgrupo5_DesignTimeLayout
         Me.cbgrupo5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbgrupo5.Location = New System.Drawing.Point(140, 72)
+        Me.cbgrupo5.Location = New System.Drawing.Point(140, 131)
         Me.cbgrupo5.MaxLength = 40
         Me.cbgrupo5.Name = "cbgrupo5"
         Me.cbgrupo5.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom
@@ -1281,6 +1281,16 @@ Partial Class F1_Productos
         Me.Panel1.Size = New System.Drawing.Size(430, 290)
         Me.Panel1.TabIndex = 223
         '
+        'UsImg
+        '
+        Me.UsImg.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.UsImg.BackColor = System.Drawing.Color.Transparent
+        Me.UsImg.Location = New System.Drawing.Point(108, 6)
+        Me.UsImg.Margin = New System.Windows.Forms.Padding(4)
+        Me.UsImg.Name = "UsImg"
+        Me.UsImg.Size = New System.Drawing.Size(290, 270)
+        Me.UsImg.TabIndex = 222
+        '
         'SuperTabItem_Imagenes
         '
         Me.SuperTabItem_Imagenes.AttachedControl = Me.SuperTabControlPanel1
@@ -1348,16 +1358,6 @@ Partial Class F1_Productos
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 329.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1322, 329)
         Me.TableLayoutPanel1.TabIndex = 227
-        '
-        'UsImg
-        '
-        Me.UsImg.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.UsImg.BackColor = System.Drawing.Color.Transparent
-        Me.UsImg.Location = New System.Drawing.Point(108, 6)
-        Me.UsImg.Margin = New System.Windows.Forms.Padding(4)
-        Me.UsImg.Name = "UsImg"
-        Me.UsImg.Size = New System.Drawing.Size(290, 270)
-        Me.UsImg.TabIndex = 222
         '
         'F1_Productos
         '
